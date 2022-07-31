@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 
 const HomePage = React.lazy(() => import("./pages/HomePage"));
 const OthersPage = React.lazy(() => import("./pages/OthersPage"));
+const FormPage = React.lazy(() => import("./pages/FormPage"));
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} exact />
           <Route path="/otherspage" element={<OthersPage />} />
+          <Route path="/formpage" element={<FormPage />} />
         </Routes>
       </Suspense>
     </div>

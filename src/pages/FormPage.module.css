@@ -1,0 +1,27 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.formContainer {
+  background-color: orange;
+  padding: 10px;
+}
+.formField {
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.submitButton {
+  border: none;
+  padding: 10px;
+  background-color: chartreuse;
+  margin: 10px;
+}
+
+p {
+  color: red;
+}
