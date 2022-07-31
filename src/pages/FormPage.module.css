@@ -25,3 +25,7 @@ label {
 p {
   color: red;
 }
+
+.noDisplay {
+  display: none;
+}
