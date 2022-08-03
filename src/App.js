@@ -1,12 +1,13 @@
-import "./App.css";
-import React, { Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
+import "./App.css"
+import React, { Suspense } from "react"
+import { Routes, Route } from "react-router-dom"
+import ApiTestPage from "./pages/ApiTestPage"
 //import HomePage from "./pages/HomePage";
 //import OthersPage from "./pages/OthersPage";
 
-const HomePage = React.lazy(() => import("./pages/HomePage"));
-const OthersPage = React.lazy(() => import("./pages/OthersPage"));
-const FormPage = React.lazy(() => import("./pages/FormPage"));
+const HomePage = React.lazy(() => import("./pages/HomePage"))
+const OthersPage = React.lazy(() => import("./pages/OthersPage"))
+const FormPage = React.lazy(() => import("./pages/FormPage"))
 
 function App() {
   return (
@@ -17,10 +18,11 @@ function App() {
           <Route path="/" element={<HomePage />} exact />
           <Route path="/otherspage" element={<OthersPage />} />
           <Route path="/formpage" element={<FormPage />} />
+          <Route path="/apitestpage" element={<ApiTestPage />} />
         </Routes>
       </Suspense>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
