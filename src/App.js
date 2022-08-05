@@ -2,6 +2,7 @@ import "./App.css"
 import React, { Suspense } from "react"
 import { Routes, Route } from "react-router-dom"
 import ApiTestPage from "./pages/ApiTestPage"
+import ApiTestPageFetch from "./pages/ApiTestPageFetch"
 //import HomePage from "./pages/HomePage";
 //import OthersPage from "./pages/OthersPage";
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/otherspage" element={<OthersPage />} />
           <Route path="/formpage" element={<FormPage />} />
           <Route path="/apitestpage" element={<ApiTestPage />} />
+          <Route path="/apitestpagefetch" element={<ApiTestPageFetch />} />
         </Routes>
       </Suspense>
     </div>
