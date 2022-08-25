@@ -5,6 +5,8 @@ import ApiTestPage from "./pages/ApiTestPage"
 import ApiTestPageFetch from "./pages/ApiTestPageFetch"
 import ReduxPage from "./pages/ReduxPage"
 import RerenderTests from "./pages/RerenderTests"
+import ClassComponents from "./pages/ClassComponents"
+import { Link } from "react-router-dom"
 //import HomePage from "./pages/HomePage";
 //import OthersPage from "./pages/OthersPage";
 
@@ -15,7 +17,9 @@ const FormPage = React.lazy(() => import("./pages/FormPage"))
 function App() {
   return (
     <div>
-      <h1>Hello!</h1>
+      <Link to="/">
+        <h1>HOME</h1>
+      </Link>
       <Suspense fallback={<div>Loading page...</div>}>
         <Routes>
           <Route path="/" element={<HomePage />} exact />
@@ -25,6 +29,7 @@ function App() {
           <Route path="/apitestpagefetch" element={<ApiTestPageFetch />} />
           <Route path="/reduxpage" element={<ReduxPage />} />
           <Route path="/rerender" element={<RerenderTests />} />
+          <Route path="/classComponents" element={<ClassComponents />} />
         </Routes>
       </Suspense>
     </div>

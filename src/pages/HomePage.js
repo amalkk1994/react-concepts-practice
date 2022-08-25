@@ -10,6 +10,7 @@ const HomePage = () => {
       <Link to="/apitestpagefetch">API Test page using fetch</Link>
       <Link to="/reduxpage">Redux page</Link>
       <Link to="/rerender">Re render page</Link>
+      <Link to="/classcomponents">Class components</Link>
     </div>
   )
 }
