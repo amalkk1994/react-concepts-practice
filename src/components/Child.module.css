@@ -1,0 +1,28 @@
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: chartreuse;
+}
+
+.rectangle {
+  width: 100px;
+  height: 100px;
+  color: yellow;
+  border-left: 100px solid blue;
+  border-right: 100px solid red;
+  border-top: 100px solid green;
+  border-bottom: 100px solid orange;
+  margin-top: 50px;
+}
+
+.rectangleOne {
+  width: 0px;
+  height: 0px;
+  color: yellow;
+  border-left: 100px solid blue;
+  border-right: 100px solid transparent;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  margin-top: 50px;
+}
